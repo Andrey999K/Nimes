@@ -1,0 +1,30 @@
+.footer {
+  padding: 50px 0;
+  color: #FFFFFF;
+  background: #151C22;
+
+  .container {
+    text-align: center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  &__list {
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
+    justify-content: center;
+    grid-gap: 30px;
+  }
+
+  &__social {
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
+    grid-gap: 30px;
+  }
+
+}
