@@ -2,32 +2,14 @@
   <div class="container">
     <div class="page-header__content">
       <div class="page-header__menu">
-        <nav class="header-menu">
-          <ul class="header-menu__list">
-            <li class="header-menu__item">
-              <a href="" class="header-menu__link"></a>
-            </li>
-            <li class="header-menu__item">
-              <a href="" class="header-menu__link"></a>
-            </li>
-            <li class="header-menu__item">
-              <a href="" class="header-menu__link"></a>
-            </li>
-          </ul>
-        </nav>
+        {{> common/header-menu }}
       </div>
       <div class="page-header__brand">
-        <div class="page-logo"></div>
+        {{> blocks/page-logo }}
       </div>
-      <div class="page-header__actions header-actions">
-        <ul class="header-actions__list">
-          <li class="header-actions__item">
-            <button class="header-actions__btn"></button>
-          </li>
-          <li class="header-actions__item">
-            <button class="header-actions__btn"></button>
-          </li>
-        </ul>
+      <div class="page-header__actions">
+        {{> blocks/header-actions }}
+        {{!-- {{> widgets/card image="main page/Rectangle 3.2" name="Jacket" price="120"}} --}}
       </div>
     </div>
   </div>
