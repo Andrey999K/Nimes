@@ -1,20 +1,21 @@
 {{!Home}}
 
-{{> layout/head page-title="Homepage"}}
+{{> layout/head page-title="Home"}}
 
 {{> layout/header }}
 
-<div class="container">
-  <h1>Home</h1>
+{{#>common/section title="Bestsellers"}}
+    {{> widgets/catalog-card link="#" card-image="home/00_home" name="Jacket" price="120"}}
+    {{> widgets/catalog-card link="#" card-image="home/01_home" name="Jacket" price="120"}}
+    {{> widgets/catalog-card link="#" card-image="home/02_home" name="Jacket" price="120"}}
+    {{> widgets/catalog-card link="#" card-image="home/03_home" name="Jacket" price="120"}}
+{{/ common/section }}
 
-  <ul>
-    {{> core/link-example href=links.home.url label=links.home.label current=true}}
-    {{> core/link-example href=links.about.url label=links.about.label}}
-    {{> core/link-example href=links.about-level-2.url label=links.about-level-2.label}}
-    {{> core/link-example href=links.about-level-3.url label=links.about-level-3.label}}
-    {{> core/link-example href=links.404.url label=links.404.label}}
-    {{> core/link-example href=links.ui-toolkit.url label=links.ui-toolkit.label}}
-  </ul>
-</div>
+{{#>common/section title="Shop by category"}}
+    {{> widgets/category-card link="#" card-image="home/04_home" name="Jacket"}}
+    {{> widgets/category-card link="#" card-image="home/05_home" name="Jacket"}}
+    {{> widgets/category-card link="#" card-image="home/06_home" name="Jacket"}}
+    {{> widgets/category-card link="#" card-image="home/07_home" name="Jacket"}}
+{{/ common/section }}
 
 {{> layout/footer }}

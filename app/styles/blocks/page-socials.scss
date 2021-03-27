@@ -1,10 +1,10 @@
-.header-actions {
+.page-socials {
 
   &__list {
     display: flex;
   }
 
   &__item:not(:first-child) {
-    margin-left: 35px;
+    margin-left: 30px;
   }
 }

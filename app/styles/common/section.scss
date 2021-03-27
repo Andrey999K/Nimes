@@ -1,0 +1,38 @@
+.section {
+  padding: 130px 0;
+  color: $color-dark;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__view-all {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 80px;
+      height: 1px;
+      background: $color-dark;
+    }
+  }
+
+  &__content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

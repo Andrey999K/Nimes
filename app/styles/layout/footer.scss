@@ -14,17 +14,18 @@
 
   &__list {
     margin: 35px auto 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
-    justify-content: center;
-    grid-gap: 30px;
+    //display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(0, max-content));
+    //justify-content: center;
+    //grid-gap: 30px;
+
+    &-item:not(:first-child) {
+      margin-left: 35px;
+    }
   }
 
   &__social {
     margin: 35px auto 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, max-content));
-    grid-gap: 30px;
   }
 
 }

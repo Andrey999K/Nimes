@@ -1,3 +1,15 @@
 {
-
+  "header-menu": [{
+      "href": "#",
+      "text": "Woman"
+    },
+    {
+      "href": "#",
+      "text": "Man"
+    },
+    {
+      "href": "#",
+      "text": "New"
+    }
+  ]
 }

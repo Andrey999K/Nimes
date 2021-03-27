@@ -1,13 +1,9 @@
 <nav class="header-menu">
   <ul class="header-menu__list">
-    <li class="header-menu__item">
-      <a href="" class="header-menu__link">Woman</a>
-    </li>
-    <li class="header-menu__item">
-      <a href="" class="header-menu__link">Man</a>
-    </li>
-    <li class="header-menu__item">
-      <a href="" class="header-menu__link">New</a>
-    </li>
+    {{#each items}}
+      <li class="header-menu__item">
+        <a href="{{this.href}}" class="header-menu__link">{{this.text}}</a>
+      </li>
+    {{/each}}
   </ul>
 </nav>
