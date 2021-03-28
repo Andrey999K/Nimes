@@ -1,0 +1,20 @@
+.page-breadcrumbs {
+
+  &__list {
+    display: flex;
+    color: #727A82;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__item:not(:first-child) {
+    position: relative;
+    margin-left: 29px;
+
+    &::before {
+      content: "/";
+      position: absolute;
+      left: -19px;
+    }
+  }
+}
