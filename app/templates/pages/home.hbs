@@ -2,20 +2,52 @@
 
 {{> layout/head page-title="Home"}}
 
-{{> layout/header }}
+{{> layout/header home-page=" " }}
+
+<section class="page__banner">
+    <div class="container">
+        <div class="page__banner-content">
+            <div class="page__banner-info">
+                <p class="page__banner-description">The quality you deserve</p>
+                <h2 class="page__banner-title">DENIM</h2>
+                <div class="page__banner-button">
+                    <button class="btn">Check new collection</button>
+                </div>
+            </div>
+            <div class="page__banner-photo">
+                <div class="page__banner-image">
+                    {{> components/image img="home/00_home" ext="jpg"}}
+                </div>
+            </div>
+        </div>
+        <div class="page__banner-footer">
+            <button class="page__banner-down">
+                {{> ui/svg name="down" }}
+            </button>
+            <ul class="page__banner-socials">
+                <li class="page__banner-socials-item">
+                    <a href="#" class="page__banner-socials-link">Facebook</a>
+                </li>
+                <li class="page__banner-socials-item">
+                    <a href="#" class="page__banner-socials-link">Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
 {{#>common/section title="Bestsellers"}}
-    {{> widgets/catalog-card link="#" card-image="home/00_home" name="Jacket" price="120"}}
-    {{> widgets/catalog-card link="#" card-image="home/01_home" name="Jacket" price="120"}}
-    {{> widgets/catalog-card link="#" card-image="home/02_home" name="Jacket" price="120"}}
-    {{> widgets/catalog-card link="#" card-image="home/03_home" name="Jacket" price="120"}}
+    {{> widgets/card-item link="#" card-image="home/03_home" name="Jacket" price="120"}}
+    {{> widgets/card-item link="#" card-image="home/04_home" name="Jacket" price="120"}}
+    {{> widgets/card-item link="#" card-image="home/05_home" name="Jacket" price="120"}}
+    {{> widgets/card-item link="#" card-image="home/06_home" name="Jacket" price="120"}}
 {{/ common/section }}
 
 {{#>common/section title="Shop by category"}}
-    {{> widgets/category-card link="#" card-image="home/04_home" name="Jacket"}}
-    {{> widgets/category-card link="#" card-image="home/05_home" name="Jacket"}}
-    {{> widgets/category-card link="#" card-image="home/06_home" name="Jacket"}}
-    {{> widgets/category-card link="#" card-image="home/07_home" name="Jacket"}}
+    {{> widgets/card-item link="#" card-image="home/07_home" name="Jacket"}}
+    {{> widgets/card-item link="#" card-image="home/08_home" name="Jacket"}}
+    {{> widgets/card-item link="#" card-image="home/09_home" name="Jacket"}}
+    {{> widgets/card-item link="#" card-image="home/10_home" name="Jacket"}}
 {{/ common/section }}
 
-{{> layout/footer }}
+{{> layout/footer home-page=" " }}

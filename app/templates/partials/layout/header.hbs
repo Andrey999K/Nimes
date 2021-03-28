@@ -5,7 +5,11 @@
         {{> common/header-menu items=header-menu}}
       </div>
       <div class="page-header__brand">
-        {{> blocks/page-logo }}
+          {{#if home-page }}
+              {{> blocks/page-logo home=" " }}
+          {{else}}
+              {{> blocks/page-logo }}
+          {{/if}}
       </div>
       <div class="page-header__actions">
         {{> blocks/header-actions }}

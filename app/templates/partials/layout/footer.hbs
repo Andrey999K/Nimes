@@ -3,7 +3,11 @@
 <footer class="footer page__footer">
   <div class="container">
     <div class="footer__logo">
-        {{> blocks/page-logo }}
+        {{#if home-page }}
+            {{> blocks/page-logo home-page=""}}
+        {{else}}
+            {{> blocks/page-logo }}
+        {{/if}}
     </div>
     <ul class="footer__list">
       <li class="footer__list-item">
