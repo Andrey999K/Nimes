@@ -1,0 +1,35 @@
+.product-card {
+  
+  &__info {
+    max-width: 668px;
+    padding: 70px 228px 184px 70px;
+    background: $color-gray;
+  }
+
+  &__name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__colors {
+    margin-top: 50px;
+  }
+
+  &__sizes {
+    margin-top: 40px;
+  }
+
+  &__price {
+    margin-top: 40px;
+  }
+}

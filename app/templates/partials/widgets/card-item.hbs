@@ -1,4 +1,8 @@
-<article class="card-item">
+<article class="
+    card-item
+{{#if big }}
+    card-item--big
+{{/if}}">
     <a class="card-item__link" href="{{ link }}"></a>
     <div class="card-item__img">
         {{> components/image img=card-image ext="jpg"}}

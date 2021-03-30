@@ -16,4 +16,39 @@
     font-size: 32px;
     line-height: 125%;
   }
+
+  &__background {
+    position: relative;
+    width: 359px;
+    height: 260px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 178px;
+      height: 135px;
+      left: 0;
+      background: url($images_dir + "catalog/01_catalog.png") no-repeat center/cover;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 232px;
+      height: 176px;
+      right: 0;
+      background: url($images_dir + "catalog/01_catalog.png") no-repeat center/cover;
+      z-index: 1;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 2;
+  }
 }

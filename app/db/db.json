@@ -11,5 +11,53 @@
       "href": "#",
       "text": "New"
     }
-  ]
+  ],
+  "catalog-list":
+          [
+            {
+              "image": "catalog/03_catalog",
+              "name": "Jacket",
+              "price": "40"
+            },
+            {
+              "image": "catalog/04_catalog",
+              "name": "Jacket",
+              "price": "70"
+            },
+            {
+              "image": "catalog/05_catalog",
+              "name": "Jacket",
+              "price": "60"
+            },
+            {
+              "image": "catalog/06_catalog",
+              "name": "Jacket",
+              "price": "50"
+            },
+            {
+              "image": "catalog/07_catalog",
+              "name": "Jacket",
+              "price": "40"
+            },
+            {
+              "image": "catalog/08_catalog",
+              "name": "Jacket",
+              "price": "110"
+            },
+            {
+              "image": "catalog/09_catalog",
+              "name": "Jacket",
+              "price": "35"
+            },
+            {
+              "image": "catalog/10_catalog",
+              "name": "Jacket",
+              "price": "85"
+            }
+          ],
+  "catalog-item-big": {
+    "image": "catalog/11_catalog",
+    "name": "Jacket",
+    "price": "160"
+  }
 }

@@ -1,0 +1,19 @@
+.catalog {
+
+  &__goods {
+    padding: 40px 0 130px;
+
+    &-list {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 243px);
+      grid-gap: 66px;
+      padding-top: 40px;
+    }
+
+    &-pagination {
+      margin-top: 75px;
+      text-align: center;
+    }
+  }
+}

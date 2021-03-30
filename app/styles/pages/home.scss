@@ -1,91 +1,131 @@
-.page__banner {
-  padding-bottom: 50px;
-  background: $color-gray;
+.page {
 
-  .container {
-    position: relative;
-  }
+  &__banner {
+    padding-bottom: 50px;
+    background: $color-gray;
 
-  &-content {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 835px;
-    margin: 0 auto;
-
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -50px;
-      right: -50px;
-      width: 232px;
-      height: 176px;
-      background: url($images_dir + "home/02_home.png") no-repeat center/cover;
+    .container {
+      position: relative;
     }
-  }
 
-  &-description {
-    font-size: 18px;
-    color: $color-gray-text;
-  }
+    &-content {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 835px;
+      margin: 0 auto;
 
-  &-title {
-    margin-top: 25px;
-    //font-size: 128px;
-    color: $color-dark;
-  }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        width: 232px;
+        height: 176px;
+        background: url($images_dir + "home/02_home.png") no-repeat center/cover;
+      }
+    }
 
-  &-button {
-    margin-top: 50px;
-  }
+    &-description {
+      font-size: 18px;
+      color: $color-gray-text;
+    }
 
-  &-photo {
-    position: relative;
-    max-width: 480px;
-    width: 100%;
-    height: 567px;
+    &-title {
+      margin-top: 25px;
+      font-size: 128px;
+      font-family: 'Anton', sans-serif;
+      color: $color-dark;
+    }
 
-    &::before {
-      content: "";
+    &-button {
+      margin-top: 50px;
+    }
+
+    &-photo {
+      position: relative;
+      max-width: 480px;
+      width: 100%;
+      height: 567px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 232px;
+        height: 176px;
+        background: url($images_dir + "home/01_home.png") no-repeat center/cover;
+      }
+    }
+
+    &-image {
       position: absolute;
       top: 0;
-      left: 0;
-      width: 232px;
-      height: 176px;
-      background: url($images_dir + "home/01_home.png") no-repeat center/cover;
+      right: 0;
+      width: 100%;
+      padding: 50px 0 0 50px;
+      z-index: 2;
+    }
+
+    &-footer {
+      color: $color-dark;
+    }
+
+    &-down {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+
+    &-socials {
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+      font-size: 14px;
+      font-weight: 500;
+
+      &-item:not(:first-child) {
+        margin-top: 35px;
+      }
     }
   }
 
-  &-image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    padding: 50px 0 0 50px;
-    z-index: 2;
-  }
+  &__banner1 {
 
-  &-footer {
-    color: $color-dark;
-  }
+    &-content {
+      display: flex;
+    }
 
-  &-down {
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-  }
+    &-left {
+      max-width: 700px;
+    }
 
-  &-socials {
-    position: absolute;
-    bottom: 0;
-    right: 30px;
-    font-size: 14px;
-    font-weight: 500;
+    &-right {
+      padding: 31px 70px 31px 0;
+      background: url($images_dir + "home/02_home.png") no-repeat center/cover;
+    }
 
-    &-item:not(:first-child) {
-      margin-top: 35px;
+    &-info {
+      padding: 70px 112px 70px 70px;
+      background: $color-gray;
+    }
+
+    &-description {
+      font-size: 18px;
+      color: $color-gray-text;
+    }
+
+    &-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    &-button {
+      margin-top: 50px;
     }
   }
 }

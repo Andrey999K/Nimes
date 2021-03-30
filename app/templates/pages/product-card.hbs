@@ -1,0 +1,33 @@
+{{!Product card}}
+
+{{> layout/head page-title="Product card"}}
+
+{{> layout/header }}
+
+<section class="product-card">
+    <div class="product-card__content">
+        <div class="product-card__photos">
+
+        </div>
+        <div class="product-card__info">
+            <h2 class="product-card__name">Overalls</h2>
+            <p class="product-card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
+            <div class="product-card__colors">
+                <div class="product-card__text">Color</div>
+            </div>
+            <div class="product-card__sizes">
+                <div class="product-card__text">Size</div>
+            </div>
+            <p class="product-card__price">$ 160</p>
+        </div>
+    </div>
+</section>
+
+{{#>common/section title="You may also like"}}
+    {{> widgets/card-item link="#" card-image="product-card/00_product-card" name="Overalls" price="140"}}
+    {{> widgets/card-item link="#" card-image="product-card/01_product-card" name="Overalls" price="110"}}
+    {{> widgets/card-item link="#" card-image="product-card/02_product-card" name="Jacket" price="70"}}
+    {{> widgets/card-item link="#" card-image="product-card/03_product-card" name="Jacket" price="60"}}
+{{/ common/section }}
+
+{{> layout/footer }}

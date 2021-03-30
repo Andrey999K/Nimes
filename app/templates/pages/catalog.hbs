@@ -1,0 +1,27 @@
+{{!Catalog}}
+
+{{> layout/head page-title="Catalog"}}
+
+{{> layout/header }}
+
+{{> widgets/intro-banner }}
+
+<section class="catalog__goods">
+    <div class="container">
+        <div class="catalog__goods-contain">
+            <ul class="catalog__goods-list">
+                {{#each catalog-list}}
+                    {{> widgets/card-item card-image=this.image link="#" name=this.name price=this.price }}
+                {{/each}}
+                {{> widgets/card-item card-image=catalog-item-big.image link="#"
+                        name=catalog-item-big.name
+                        price=catalog-item-big.price big=" "}}
+            </ul>
+            <div class="catalog__goods-pagination">
+                {{> blocks/catalog-pagination }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{> layout/footer }}

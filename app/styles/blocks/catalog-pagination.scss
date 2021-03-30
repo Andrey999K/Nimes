@@ -1,0 +1,23 @@
+.catalog-pagination {
+
+  &__text {
+    position: relative;
+    display: inline;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #E5E5E5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 40px;
+      height: 1px;
+      background: $color-dark;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+  }
+}
