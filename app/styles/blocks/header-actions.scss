@@ -7,4 +7,21 @@
   &__item:not(:first-child) {
     margin-left: 35px;
   }
+
+  &--home {
+    position: relative;
+
+    .header-actions__list {
+      position: absolute;
+      top: calc(67px - 25px + 50px);
+      right: 0;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    .header-actions__item:not(:first-child) {
+      margin-left: 0;
+      margin-top: 35px;
+    }
+  }
 }

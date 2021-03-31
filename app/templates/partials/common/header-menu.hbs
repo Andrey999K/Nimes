@@ -1,4 +1,8 @@
-<nav class="header-menu">
+<nav class="
+header-menu
+{{#if home }}
+    header-menu--home
+{{/if}}">
   <ul class="header-menu__list">
     {{#each items}}
       <li class="header-menu__item">

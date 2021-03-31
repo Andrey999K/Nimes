@@ -7,7 +7,29 @@
 <section class="product-card">
     <div class="product-card__content">
         <div class="product-card__photos">
-
+            <button class="product-card__prev-photo">
+                {{>ui/svg name="prev"}}
+            </button>
+            <ul class="product-card__photos-list">
+                <li class="product-card__photos-item product-card__photos-item-big">
+                    {{> components/image img="product-card/00_product-card" ext="jpg" }}
+                </li>
+                <li class="product-card__photos-item">
+                    {{> components/image img="product-card/01_product-card" ext="jpg" }}
+                </li>
+                <li class="product-card__photos-item">
+                    {{> components/image img="product-card/02_product-card" ext="jpg" }}
+                </li>
+                <li class="product-card__photos-item">
+                    {{> components/image img="product-card/03_product-card" ext="jpg" }}
+                </li>
+                <li class="product-card__photos-item">
+                    {{> components/image img="product-card/04_product-card" ext="jpg" }}
+                </li>
+            </ul>
+            <button class="product-card__next-photo">
+                {{>ui/svg name="next"}}
+            </button>
         </div>
         <div class="product-card__info">
             <h2 class="product-card__name">Overalls</h2>
@@ -24,10 +46,10 @@
 </section>
 
 {{#>common/section title="You may also like"}}
-    {{> widgets/card-item link="#" card-image="product-card/00_product-card" name="Overalls" price="140"}}
-    {{> widgets/card-item link="#" card-image="product-card/01_product-card" name="Overalls" price="110"}}
-    {{> widgets/card-item link="#" card-image="product-card/02_product-card" name="Jacket" price="70"}}
-    {{> widgets/card-item link="#" card-image="product-card/03_product-card" name="Jacket" price="60"}}
+    {{> widgets/card-item link="#" card-image="product-card/05_product-card" name="Overalls" price="140"}}
+    {{> widgets/card-item link="#" card-image="product-card/06_product-card" name="Overalls" price="110"}}
+    {{> widgets/card-item link="#" card-image="product-card/07_product-card" name="Jacket" price="70"}}
+    {{> widgets/card-item link="#" card-image="product-card/08_product-card" name="Jacket" price="60"}}
 {{/ common/section }}
 
 {{> layout/footer }}

@@ -1,16 +1,20 @@
-<div class="header-actions">
+<div class="
+header-actions
+{{#if home }}
+    header-actions--home
+{{/if}}">
   <ul class="header-actions__list">
     <li class="header-actions__item">
       <div class="action-search">
         <button class="header-actions__btn">
-          {{>ui/svg name="search"}}
+          {{> ui/svg name="search" }}
         </button>
       </div>
     </li>
     <li class="header-actions__item">
       <div class="action-basket">
         <button class="header-actions__btn">
-          {{>ui/svg name="basket"}}
+          {{> ui/svg name="basket" }}
         </button>
       </div>
     </li>

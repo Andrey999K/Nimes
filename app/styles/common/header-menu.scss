@@ -7,6 +7,23 @@
     display: flex;
   }
 
+  &--home {
+    position: relative;
+
+    .header-menu__list {
+      position: absolute;
+      top: calc(67px - 25px + 50px);
+      left: 0;
+      flex-direction: column;
+      z-index: 2;
+    }
+
+    .header-menu__item:not(:first-child) {
+      margin-top: 35px;
+      margin-left: 0;
+    }
+  }
+
   &__item:not(:first-child) {
     margin-left: 35px;
   }
