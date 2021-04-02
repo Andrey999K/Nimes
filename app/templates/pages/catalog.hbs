@@ -11,9 +11,10 @@
         <div class="catalog__goods-contain">
             <ul class="catalog__goods-list">
                 {{#each catalog-list}}
-                    {{> widgets/card-item card-image=this.image link="#" name=this.name price=this.price }}
+                    {{> widgets/card-item card-image=this.image link="product-card.html"
+                            name=this.name price=this.price }}
                 {{/each}}
-                {{> widgets/card-item card-image=catalog-item-big.image link="#"
+                {{> widgets/card-item card-image=catalog-item-big.image link="product-card.html"
                         name=catalog-item-big.name
                         price=catalog-item-big.price big=" "}}
             </ul>

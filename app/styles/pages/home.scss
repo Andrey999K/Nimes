@@ -92,40 +92,4 @@
       }
     }
   }
-
-  &__banner1 {
-
-    &-content {
-      display: flex;
-    }
-
-    &-left {
-      max-width: 700px;
-    }
-
-    &-right {
-      padding: 31px 70px 31px 0;
-      background: url($images_dir + "home/02_home.png") no-repeat center/cover;
-    }
-
-    &-info {
-      padding: 70px 112px 70px 70px;
-      background: $color-gray;
-    }
-
-    &-description {
-      font-size: 18px;
-      color: $color-gray-text;
-    }
-
-    &-title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-
-    &-button {
-      margin-top: 50px;
-    }
-  }
 }

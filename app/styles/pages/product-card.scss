@@ -4,7 +4,7 @@
     display: flex;
     padding-left: 98px;
     width: 100%;
-    max-width: 1268px;
+    max-width: calc(1268px + 98px);
     margin: 0 auto;
   }
 
@@ -15,7 +15,7 @@
     &-list {
       display: grid;
       grid-template-columns: repeat(4, 85px);
-      grid-template-row: 523px 113px;
+      grid-template-rows: 523px 113px;
       grid-gap: 20px;
       padding: 0 60px;
     }
@@ -46,9 +46,10 @@
   }
   
   &__info {
+    width: 100%;
     margin-left: 60px;
     max-width: 668px;
-    padding: 70px 228px 184px 70px;
+    padding: 70px 70px 184px;
     background: $color-gray;
   }
 
@@ -60,6 +61,7 @@
   &__description {
     font-size: 16px;
     margin-top: 40px;
+    max-width: 370px;
   }
 
   &__text {
@@ -69,13 +71,52 @@
 
   &__colors {
     margin-top: 50px;
+
+    &-list {
+      display: flex;
+      margin-top: 25px;
+      padding: 3px 0;
+    }
+
+    &-item:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    &-label {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+    }
   }
 
   &__sizes {
     margin-top: 40px;
+
+    &-list {
+      display: flex;
+      margin-top: 25px;
+    }
+
+    &-item:not(:first-child) {
+      margin-left: 20px;
+    }
   }
 
   &__price {
     margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
   }
+}
+
+.color1 {
+  background: #B0C3C7;
+}
+
+.color2 {
+  background: #3B6392;
+}
+
+.color3 {
+  background: #BFC3C8;
 }
