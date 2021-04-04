@@ -2,6 +2,10 @@
   padding: 130px 0;
   color: $color-dark;
 
+  @include media(tablet) {
+    padding: 100px 0;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -31,8 +35,29 @@
   }
 
   &__content {
+    //display: flex;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-gap: 30px;
     margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
+
+    @include media(tablet) {
+      grid-template-columns: repeat(2, 324px);
+      grid-row-gap: 50px;
+    }
+
+    @include media(mobile) {
+      grid-template-columns: repeat(2, 130px);
+      grid-row-gap: 30px;
+    }
+  }
+
+  &--catalog {
+    .section__content {
+      margin-top: 0;
+      display: block;
+    }
   }
 }

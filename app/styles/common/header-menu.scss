@@ -12,15 +12,24 @@
 
     .header-menu__list {
       position: absolute;
-      top: calc(67px - 25px + 50px);
+      top: calc(67px - 25px - 27px + 50px);
       left: 0;
       flex-direction: column;
       z-index: 2;
+
+      @include media(tablet) {
+        flex-direction: row;
+      }
     }
 
     .header-menu__item:not(:first-child) {
       margin-top: 35px;
       margin-left: 0;
+
+      @include media(tablet) {
+        margin-top: 0;
+        margin-left: 35px;
+      }
     }
   }
 

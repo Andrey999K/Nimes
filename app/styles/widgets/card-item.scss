@@ -4,6 +4,10 @@
   max-width: 270px;
   color: $color-dark;
 
+  @include media(tablet) {
+    max-width: 324px;
+  }
+
   &--big {
     max-width: initial;
     grid-column-start: 3;

@@ -8,19 +8,21 @@ html {
 }
 
 .container {
-  width: $desktopWidth + $desktopGutter * 2;
-  max-width: 100%;
+  width: 100%;
+  max-width: $desktopWidth + $desktopGutter * 2;
   margin-right: auto;
   margin-left: auto;
   padding-left: $desktopGutter;
   padding-right: $desktopGutter;
 
   @include media(tablet) {
+    max-width: $tabletWidth + $tabletGutter * 2;
     padding-left: $tabletGutter;
     padding-right: $tabletGutter;
   }
 
   @include media(mobile) {
+    max-width: $mobileWidth + $mobileGutter * 2;
     padding-left: $mobileGutter;
     padding-right: $mobileGutter;
   }

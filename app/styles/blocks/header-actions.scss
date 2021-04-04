@@ -13,15 +13,34 @@
 
     .header-actions__list {
       position: absolute;
-      top: calc(67px - 25px + 50px);
+      top: calc(67px - 25px - 27px + 50px);
       right: 0;
       flex-direction: column;
       z-index: 2;
+
+      @include media(tablet) {
+        flex-direction: row;
+      }
     }
 
     .header-actions__item:not(:first-child) {
       margin-left: 0;
       margin-top: 35px;
+
+      @include media(tablet) {
+        margin-left: 35px;
+        margin-top: 0;
+      }
     }
   }
+}
+
+.icon--search {
+  width: 18px;
+  height: 18px;
+}
+
+.icon--basket {
+  width: 20px;
+  height: 18px;
 }

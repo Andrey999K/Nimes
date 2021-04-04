@@ -1,9 +1,17 @@
-<section class="section">
+<section class="
+{{#if title }}
+    section
+{{else}}
+    section section--catalog
+{{/if}}
+">
     <div class="container">
-        <div class="section__header">
-            <h2 class="section__title">{{ title }}</h2>
-            <button class="section__view-all">View all</button>
-        </div>
+        {{#if title }}
+            <div class="section__header">
+                <h2 class="section__title">{{ title }}</h2>
+                <button class="section__view-all">View all</button>
+            </div>
+        {{/if}}
         <div class="section__content">
             {{> @partial-block }}
         </div>
