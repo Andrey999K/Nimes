@@ -35,9 +35,6 @@
   }
 
   &__content {
-    //display: flex;
-    //justify-content: space-between;
-    //flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(4, 270px);
     grid-gap: 30px;
@@ -46,6 +43,7 @@
     @include media(tablet) {
       grid-template-columns: repeat(2, 324px);
       grid-row-gap: 50px;
+      margin-top: 60px;
     }
 
     @include media(mobile) {
