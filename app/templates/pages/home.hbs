@@ -62,10 +62,26 @@
 {{> pages/home-banner }}
 
 {{#>common/section title="Shop by category"}}
-    {{> widgets/card-item link="product-card.html" card-image="home/08_home" name="Jacket"}}
-    {{> widgets/card-item link="product-card.html" card-image="home/09_home" name="Jacket"}}
-    {{> widgets/card-item link="product-card.html" card-image="home/10_home" name="Jacket"}}
-    {{> widgets/card-item link="product-card.html" card-image="home/11_home" name="Jacket"}}
+    {{> widgets/card-item link="product-card.html"
+      card-image="home/08_home"
+      card-image-tablet="home/08_home-tablet"
+      card-image-mobile="home/08_home-mobile"
+      name="Jeans"}}
+    {{> widgets/card-item link="product-card.html"
+      card-image="home/09_home"
+      card-image-tablet="home/09_home-tablet"
+      card-image-mobile="home/09_home-mobile"
+      name="Shirts"}}
+    {{> widgets/card-item link="product-card.html"
+      card-image="home/10_home"
+      card-image-tablet="home/10_home-tablet"
+      card-image-mobile="home/10_home-mobile"
+      name="Overalls"}}
+    {{> widgets/card-item link="product-card.html"
+      card-image="home/11_home"
+      card-image-tablet="home/11_home-tablet"
+      card-image-mobile="home/11_home-mobile"
+      name="Jacket"}}
 {{/ common/section }}
 
 {{> layout/footer home-page=" " }}

@@ -16,47 +16,65 @@
           [
             {
               "image": "catalog/03_catalog",
+              "image-tablet":"catalog/03_catalog-tablet",
+              "image-mobile":"catalog/03_catalog-mobile",
               "name": "Jacket",
               "price": "40"
             },
             {
               "image": "catalog/04_catalog",
+              "image-tablet": "catalog/04_catalog-tablet",
+              "image-mobile": "catalog/04_catalog-mobile",
               "name": "Jacket",
               "price": "70"
             },
             {
               "image": "catalog/05_catalog",
+              "image-tablet": "catalog/05_catalog-tablet",
+              "image-mobile": "catalog/05_catalog-mobile",
               "name": "Jacket",
               "price": "60"
             },
             {
               "image": "catalog/06_catalog",
+              "image-tablet": "catalog/06_catalog-tablet",
+              "image-mobile": "catalog/06_catalog-mobile",
               "name": "Jacket",
               "price": "50"
             },
             {
               "image": "catalog/07_catalog",
+              "image-tablet": "catalog/07_catalog-tablet",
+              "image-mobile": "catalog/07_catalog-mobile",
               "name": "Jacket",
               "price": "40"
             },
             {
               "image": "catalog/08_catalog",
+              "image-tablet": "catalog/08_catalog-tablet",
+              "image-mobile": "catalog/08_catalog-mobile",
               "name": "Jacket",
               "price": "110"
             },
             {
               "image": "catalog/09_catalog",
+              "image-tablet": "catalog/09_catalog-tablet",
+              "image-mobile": "catalog/09_catalog-mobile",
               "name": "Jacket",
               "price": "35"
             },
             {
               "image": "catalog/10_catalog",
+              "image-tablet": "catalog/10_catalog-tablet",
+              "image-mobile": "catalog/10_catalog-mobile",
               "name": "Jacket",
               "price": "85"
             }
           ],
   "catalog-item-big": {
     "image": "catalog/11_catalog",
+    "image-tablet": "catalog/11_catalog-tablet",
+    "image-mobile": "catalog/11_catalog-mobile",
     "name": "Jacket",
     "price": "160"
   }

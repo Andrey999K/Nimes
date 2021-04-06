@@ -8,11 +8,21 @@
       justify-content: center;
       grid-template-columns: repeat(4, 243px);
       grid-gap: 66px;
+
+      @include media(tablet) {
+        grid-template-columns: repeat(3, 206px);
+        grid-column-gap: 30px;
+        grid-row-gap: 50px;
+      }
     }
 
     &-pagination {
       margin-top: 75px;
       text-align: center;
+
+      @include media(tablet) {
+        margin-top: 60px;
+      }
     }
   }
 }

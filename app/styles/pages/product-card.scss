@@ -1,12 +1,23 @@
 .product-card {
   padding-top: 55px;
 
+  @include media(tablet) {
+    padding-top: 36px;
+  }
+
+  .container {
+    padding-left: 0;
+    max-width: 1268px;
+  }
+
   &__content {
     display: flex;
-    padding-left: 98px;
-    width: 100%;
-    max-width: calc(1268px + 98px);
+    justify-content: flex-end;
     margin: 0 auto;
+
+    @include media(tablet) {
+
+    }
   }
 
   &__photos {
@@ -19,6 +30,13 @@
       grid-template-rows: 523px 113px;
       grid-gap: 20px;
       padding: 0 60px;
+
+      @include media(tablet) {
+        grid-template-columns: repeat(2, 151px);
+        grid-template-rows: 360px 99px 99px;
+        grid-gap: 22px;
+        padding: 0;
+      }
     }
 
     &-item {
@@ -26,6 +44,11 @@
       &-big {
         grid-column-start: 1;
         grid-column-end: 5;
+
+        @include media(tablet) {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
       }
     }
   }
@@ -36,6 +59,10 @@
     left: 0;
     width: 10px;
     height: 21px;
+
+    @include media(tablet) {
+      display: none;
+    }
   }
 
   &__next-photo {
@@ -44,19 +71,30 @@
     right: 0;
     width: 10px;
     height: 21px;
+
+    @include media(tablet) {
+      display: none;
+    }
   }
   
   &__info {
     width: 100%;
     margin-left: 60px;
     max-width: 668px;
-    padding: 70px 70px 184px;
+    padding: 70px;
     background: $color-gray;
+
+    @include media(tablet) {
+      margin-left: 30px;
+      padding: 50px 47px;
+      max-width: 369px;
+    }
   }
 
   &__name {
     font-size: 32px;
     font-weight: bold;
+    line-height: 1;
   }
 
   &__description {
@@ -68,6 +106,7 @@
   &__text {
     font-size: 18px;
     font-weight: 500;
+    line-height: 1;
   }
 
   &__colors {
@@ -107,6 +146,10 @@
     margin-top: 40px;
     font-size: 18px;
     font-weight: bold;
+  }
+
+  &__add {
+    margin-top: 50px;
   }
 }
 

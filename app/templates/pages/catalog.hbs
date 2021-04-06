@@ -9,12 +9,23 @@
 {{#> common/section }}
     <ul class="catalog__goods-list">
         {{#each catalog-list}}
-            {{> widgets/card-item card-image=this.image link="product-card.html"
-                    name=this.name price=this.price }}
+            {{> widgets/card-item
+              card-image=this.image
+              card-image-tablet=this.image-tablet
+              card-image-mobile=this.image-mobile
+              link="product-card.html"
+              name=this.name price=this.price
+            }}
         {{/each}}
-        {{> widgets/card-item card-image=catalog-item-big.image link="product-card.html"
-                name=catalog-item-big.name
-                price=catalog-item-big.price big=" "}}
+        {{> widgets/card-item
+          card-image=catalog-item-big.image
+          card-image-tablet=catalog-item-big.image-tablet
+          card-image-mobile=catalog-item-big.image-mobile
+          link="product-card.html"
+          name=catalog-item-big.name
+          price=catalog-item-big.price
+          big=" "
+        }}
     </ul>
     <div class="catalog__goods-pagination">
         {{> blocks/catalog-pagination }}
