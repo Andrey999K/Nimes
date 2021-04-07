@@ -1,7 +1,18 @@
 .home-banner {
 
+  @include media(mobile) {
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
   &__content {
     display: flex;
+
+    @include media(mobile) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__left {
@@ -19,6 +30,10 @@
     @include media(tablet) {
       padding: 20px 20px 20px 0;
     }
+
+    @include media(mobile) {
+      padding: 15px 15px 0 15px;
+    }
   }
 
   &__info {
@@ -27,6 +42,11 @@
 
     @include media(tablet) {
       padding: 50px 36px 50px 50px;
+    }
+
+    @include media(mobile) {
+      padding: 40px 36px;
+      text-align: center;
     }
   }
 
