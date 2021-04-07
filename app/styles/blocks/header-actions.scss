@@ -6,6 +6,10 @@
 
   &__item:not(:first-child) {
     margin-left: 35px;
+
+    @include media(mobile) {
+      margin-left: 25px;
+    }
   }
 
   &--home {
@@ -35,6 +39,14 @@
       @include media(mobile) {
         margin-left: 25px;
       }
+    }
+  }
+
+  svg {
+    max-height: 18px;
+
+    @include media(mobile) {
+      max-height: 16px;
     }
   }
 }
