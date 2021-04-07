@@ -1,6 +1,10 @@
 .intro-banner {
   background: $color-gray;
 
+  @include media(mobile) {
+    background: transparent;
+  }
+
   .container {
     max-width: 790px;
     display: flex;
@@ -17,12 +21,20 @@
     margin-top: 14px;
     font-size: 32px;
     line-height: 125%;
+
+    @include media(mobile) {
+      display: none;
+    }
   }
 
   &__background {
     position: relative;
     width: 359px;
     height: 260px;
+
+    @include media(mobile) {
+      display: none;
+    }
 
     &::before {
       content: "";
