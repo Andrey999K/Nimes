@@ -31,6 +31,10 @@
         margin-left: 35px;
         margin-top: 0;
       }
+
+      @include media(mobile) {
+        margin-left: 25px;
+      }
     }
   }
 }
