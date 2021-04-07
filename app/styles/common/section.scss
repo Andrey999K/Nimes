@@ -6,6 +6,10 @@
     padding: 100px 0;
   }
 
+  @include media(mobile) {
+    padding: 60px 0;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -49,6 +53,7 @@
     @include media(mobile) {
       grid-template-columns: repeat(2, 130px);
       grid-row-gap: 30px;
+      margin-top: 40px;
     }
   }
 
