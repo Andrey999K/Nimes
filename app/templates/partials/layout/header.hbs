@@ -1,6 +1,14 @@
-<header class="page-header page-header--home">
+<header class="page-header">
   <div class="container">
     <div class="page-header__content">
+      {{#if home-page }}
+      {{else}}
+        <div class='page-header__burger'>
+          <button class='page-header__burger-btn'>
+            <span></span>
+          </button>
+        </div>
+      {{/if}}
       <div class="page-header__menu">
         {{> common/header-menu items=header-menu home=home-page}}
       </div>

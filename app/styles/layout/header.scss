@@ -20,4 +20,46 @@
     position: absolute;
     right: 0;
   }
+
+  &__burger {
+    position: absolute;
+    display: none;
+
+    @include media(mobile) {
+      display: block;
+    }
+
+    &-btn {
+      position: relative;
+      display: block;
+      padding: 5px 0;
+
+      span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: $color-dark;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 2px;
+        background: $color-dark;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 20px;
+        height: 2px;
+        background: $color-dark;
+      }
+    }
+  }
 }
