@@ -18,9 +18,8 @@
                 <div class="page__banner-image">
                     {{> components/image
                             img="home/00_home"
-                            img-tablet="home/00_home-tablet"
-                            img-mobile="home/00_home-mobile"
-                            ext="jpg"}}
+                            ext="jpg"
+                    }}
                 </div>
             </div>
         </div>
@@ -41,51 +40,39 @@
 </section>
 
 {{#>common/section title="Bestsellers"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
             card-image="home/03_home"
-            card-image-tablet="home/03_home-tablet"
-            card-image-mobile="home/03_home-mobile"
             name="Jacket" price="120"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
             card-image="home/04_home"
-            card-image-tablet="home/04_home-tablet"
-            card-image-mobile="home/04_home-mobile"
             name="Jacket" price="120"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
             card-image="home/05_home"
-            card-image-tablet="home/05_home-tablet"
-            card-image-mobile="home/05_home-mobile"
             name="Jacket" price="120"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
             card-image="home/06_home"
-            card-image-tablet="home/06_home-tablet"
-            card-image-mobile="home/06_home-mobile"
             name="Jacket" price="120"}}
 {{/ common/section }}
 
 {{> pages/home-banner }}
 
 {{#>common/section title="Shop by category"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
       card-image="home/08_home"
-      card-image-tablet="home/08_home-tablet"
-      card-image-mobile="home/08_home-mobile"
       name="Jeans"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
       card-image="home/09_home"
-      card-image-tablet="home/09_home-tablet"
-      card-image-mobile="home/09_home-mobile"
-      name="Shirts"}}
-    {{> widgets/card-item link="product-card.html"
+      name="Shirts"
+      short=" "
+    }}
+    {{> widgets/card-item link="product-page.html"
       card-image="home/10_home"
-      card-image-tablet="home/10_home-tablet"
-      card-image-mobile="home/10_home-mobile"
       name="Overalls"}}
-    {{> widgets/card-item link="product-card.html"
+    {{> widgets/card-item link="product-page.html"
       card-image="home/11_home"
-      card-image-tablet="home/11_home-tablet"
-      card-image-mobile="home/11_home-mobile"
-      name="Jacket"}}
+      name="Jacket"
+      short=" "
+    }}
 {{/ common/section }}
 
 {{> layout/footer home-page=" " }}

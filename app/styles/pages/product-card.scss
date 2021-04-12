@@ -14,10 +14,10 @@
     display: flex;
     justify-content: flex-end;
     margin: 0 auto;
-    max-width: 723px;
+    max-width: 1268px;
 
     @include media(tablet) {
-
+      max-width: 723px;
     }
   }
 

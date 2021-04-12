@@ -2,13 +2,17 @@
     card-item
 {{#if big }}
     card-item--big
+{{/if}}
+{{#if catalog }}
+    card-item--catalog
+{{/if}}
+{{#if short }}
+    card-item--short
 {{/if}}">
     <a class="card-item__link" href="{{ link }}"></a>
     <div class="card-item__img">
         {{> components/image
                 img=card-image
-                img-tablet=card-image-tablet
-                img-mobile=card-image-mobile
                 ext="jpg"}}
     </div>
     <h3 class="card-item__name">{{ name }}</h3>
