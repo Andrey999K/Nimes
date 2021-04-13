@@ -58,9 +58,14 @@
   }
 
   &--catalog {
+
     .section__content {
       margin-top: 0;
       display: block;
+    }
+
+    @include media(mobile) {
+      padding-top: 117px;
     }
   }
 }

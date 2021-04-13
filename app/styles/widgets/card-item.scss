@@ -8,6 +8,10 @@
     max-width: 324px;
   }
 
+  @include media(mobile) {
+    max-width: 130px;
+  }
+
   &--catalog {
 
     .card-item__img {

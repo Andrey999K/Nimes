@@ -9,6 +9,10 @@
     max-width: 790px;
     display: flex;
     justify-content: space-between;
+
+    @include media(mobile) {
+      max-width: 290px;
+    }
   }
 
   &__content {
