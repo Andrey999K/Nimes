@@ -4,83 +4,83 @@
 
 {{> layout/header }}
 
-<section class="product-card">
+<section class="product-page">
   <div class='container'>
-    <div class="product-card__content">
-        <div class="product-card__photos">
-            <button class="product-card__prev-photo">
+    <div class="product-page__content">
+        <div class="product-page__photos">
+            <button class="product-page__prev-photo">
                 {{>ui/svg name="prev"}}
             </button>
-            <ul class="product-card__photos-list">
-                <li class="product-card__photos-item product-card__photos-item-big">
+            <ul class="product-page__photos-list">
+                <li class="product-page__photos-item product-page__photos-item-big">
                     {{> components/image
-                      img="product-card/00_product-card"
+                      img="product-page/00_product-page"
                       ext="jpg" }}
                 </li>
-                <li class="product-card__photos-item">
+                <li class="product-page__photos-item">
                     {{> components/image
-                      img="product-card/01_product-card"
+                      img="product-page/01_product-page"
                       ext="jpg" }}
                 </li>
-                <li class="product-card__photos-item">
+                <li class="product-page__photos-item">
                     {{> components/image
-                      img="product-card/02_product-card"
+                      img="product-page/02_product-page"
                       ext="jpg" }}
                 </li>
-                <li class="product-card__photos-item">
+                <li class="product-page__photos-item">
                     {{> components/image
-                      img="product-card/03_product-card"
+                      img="product-page/03_product-page"
                       ext="jpg" }}
                 </li>
-                <li class="product-card__photos-item">
+                <li class="product-page__photos-item">
                     {{> components/image
-                      img="product-card/04_product-card"
+                      img="product-page/04_product-page"
                       ext="jpg" }}
                 </li>
             </ul>
-            <button class="product-card__next-photo">
+            <button class="product-page__next-photo">
                 {{>ui/svg name="next"}}
             </button>
         </div>
-        <div class="product-card__info">
-            <h2 class="product-card__name">Overalls</h2>
-            <p class="product-card__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
-            <div class="product-card__colors">
-                <p class="product-card__text">Color</p>
-                <div class="product-card__colors-list">
-                    <input class="product-card__colors-item" id="color1"
+        <div class="product-page__info">
+            <h2 class="product-page__name">Overalls</h2>
+            <p class="product-page__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
+            <div class="product-page__colors">
+                <p class="product-page__text">Color</p>
+                <div class="product-page__colors-list">
+                    <input class="product-page__colors-item" id="color1"
                            name="color" type="radio" value="1" checked>
-                    <label class="product-card__colors-label color1" for="color1"></label>
-                    <input class="product-card__colors-item" id="color2"
+                    <label class="product-page__colors-label color1" for="color1"></label>
+                    <input class="product-page__colors-item" id="color2"
                            name="color" type="radio" value="2">
-                    <label class="product-card__colors-label color2" for="color2"></label>
-                    <input class="product-card__colors-item" id="color3"
+                    <label class="product-page__colors-label color2" for="color2"></label>
+                    <input class="product-page__colors-item" id="color3"
                            name="color" type="radio" value="3">
-                    <label class="product-card__colors-label color3" for="color3"></label>
+                    <label class="product-page__colors-label color3" for="color3"></label>
                 </div>
             </div>
-            <div class="product-card__sizes">
-                <p class="product-card__text">Size</p>
-                <div class="product-card__sizes-list">
-                    <input class="product-card__sizes-item" id="size1"
+            <div class="product-page__sizes">
+                <p class="product-page__text">Size</p>
+                <div class="product-page__sizes-list">
+                    <input class="product-page__sizes-item" id="size1"
                            name="size" type="radio" value="1">
-                    <label class="product-card__sizes-label" for="size1">XS</label>
-                    <input class="product-card__sizes-item" id="size2"
+                    <label class="product-page__sizes-label" for="size1">XS</label>
+                    <input class="product-page__sizes-item" id="size2"
                            name="size" type="radio" value="2" checked>
-                    <label class="product-card__sizes-label" for="size2">S</label>
-                    <input class="product-card__sizes-item" id="size3"
+                    <label class="product-page__sizes-label" for="size2">S</label>
+                    <input class="product-page__sizes-item" id="size3"
                            name="size" type="radio" value="3">
-                    <label class="product-card__sizes-label" for="size3">M</label>
-                    <input class="product-card__sizes-item" id="size4"
+                    <label class="product-page__sizes-label" for="size3">M</label>
+                    <input class="product-page__sizes-item" id="size4"
                            name="size" type="radio" value="4">
-                    <label class="product-card__sizes-label" for="size4">L</label>
-                    <input class="product-card__sizes-item" id="size5"
+                    <label class="product-page__sizes-label" for="size4">L</label>
+                    <input class="product-page__sizes-item" id="size5"
                            name="size" type="radio" value="5">
-                    <label class="product-card__sizes-label" for="size5">XL</label>
+                    <label class="product-page__sizes-label" for="size5">XL</label>
                 </div>
             </div>
-            <p class="product-card__price">$ 160</p>
-            <div class='product-card__add'>
+            <p class="product-page__price">$ 160</p>
+            <div class='product-page__add'>
               <button class='btn'>Add to cart</button>
             </div>
         </div>
@@ -90,19 +90,19 @@
 
 {{#>common/section title="You may also like"}}
     {{> widgets/card-item link="#"
-      card-image="product-card/05_product-card"
+      card-image="product-page/05_product-page"
       name="Overalls"
       price="140"}}
     {{> widgets/card-item link="#"
-      card-image="product-card/06_product-card"
+      card-image="product-page/06_product-page"
       name="Overalls"
       price="110"}}
     {{> widgets/card-item link="#"
-      card-image="product-card/07_product-card"
+      card-image="product-page/07_product-page"
       name="Jacket"
       price="70"}}
     {{> widgets/card-item link="#"
-      card-image="product-card/08_product-card"
+      card-image="product-page/08_product-page"
       name="Jacket"
       price="60"}}
 {{/ common/section }}
