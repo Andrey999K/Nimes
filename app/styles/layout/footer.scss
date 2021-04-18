@@ -43,7 +43,7 @@
       &:first-child {
 
         @include media(mobile) {
-          margin-left: 145px;
+          margin-left: 50%;
         }
       }
 
