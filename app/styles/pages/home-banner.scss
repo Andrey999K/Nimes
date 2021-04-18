@@ -52,11 +52,11 @@
 
     @include media(tablet) {
       padding: 20px 20px 20px 0;
-      order: -1;
     }
 
     @include media(mobile) {
       padding: 15px 15px 0 15px;
+      order: -1;
     }
   }
 

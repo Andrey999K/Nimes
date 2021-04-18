@@ -16,6 +16,10 @@
 
     .card-item__img {
       height: 270px;
+
+      @include media(mobile) {
+        height: 160px;
+      }
     }
   }
 
@@ -28,11 +32,22 @@
 
     .card-item__img {
       height: 670px;
+
+      @include media(mobile) {
+        height: 442px;
+      }
     }
 
     @include media(tablet) {
       grid-column-start: 2;
       grid-column-end: 4;
+    }
+
+    @include media(mobile) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 5;
     }
   }
 
@@ -103,5 +118,10 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 16px;
+
+    @include media(mobile) {
+      font-size: 14px;
+
+    }
   }
 }

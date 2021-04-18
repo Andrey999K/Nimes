@@ -19,5 +19,9 @@
 
   &__button {
     margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 30px;
+    }
   }
 }

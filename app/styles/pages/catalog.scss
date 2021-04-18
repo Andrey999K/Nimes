@@ -27,6 +27,10 @@
       @include media(tablet) {
         margin-top: 60px;
       }
+
+      @include media(mobile) {
+        margin-top: 50px;
+      }
     }
   }
 }
